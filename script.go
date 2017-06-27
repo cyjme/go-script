@@ -8,7 +8,7 @@ import (
 
 func main() {
 	http.HandleFunc("/build",build)
-	http.ListenAndServe("localhost:4000", nil)
+	http.ListenAndServe("localhost:8000", nil)
 }
 
 func build(w http.ResponseWriter, r *http.Request){
